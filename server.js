@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174'], // Allow frontend
+    origin: ['http://localhost:5173', 'http://localhost:5174','https://anime-p-frontend.vercel.app/'],
+    // Allow frontend
     credentials: true
 }));
 app.use(cookieParser());
